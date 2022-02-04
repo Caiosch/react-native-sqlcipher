@@ -1,10 +1,14 @@
 {
   "name": "react-native-sqlcipher",
-  "version": "0.0.6",
-  "description": "SQLCipher(SQLite3) plugin for React Native",
+  "version": "0.0.7",
+  "description": "SQLCipher (SQLite3) plugin for React Native",
   "main": "sqlite.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified yet\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Caiosch/react-native-sqlcipher.git"
   },
   "keywords": [
     "react-native-sqlite-storage",
@@ -20,21 +24,18 @@
     "cordova-sqlite-storage",
     "sqlcipher"
   ],
-  "author": "linch <369955292@qq.com>",
+  "author": "Caio Schmid",
   "license": "MIT",
-  "homepage": "https://github.com/linchenhuicn/react-native-sqlcipher/",
   "bugs": {
-    "url": "https://github.com/linchenhuicn/react-native-sqlcipher/issues"
+    "url": "https://github.com/Caiosch/react-native-sqlcipher/issues"
   },
+  "homepage": "https://github.com/Caiosch/react-native-sqlcipher",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": ">=0.14.0"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/linchenhuicn/react-native-sqlcipher.git"
+  "devDependencies": {
+    "react": "16.13.1",
+    "react-native": "^0.63.2",
+    "react-native-windows": "^0.63.6"
   }
 }

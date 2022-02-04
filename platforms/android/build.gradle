@@ -35,12 +35,14 @@ android {
 repositories {
     mavenCentral()
     google()
+    maven {
+        url "https://maven.google.com"
+    }
 }
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
 
-    implementation 'net.zetetic:android-database-sqlcipher:4.3.0@aar'
-    implementation "androidx.sqlite:sqlite:2.0.1"
-
+    implementation 'net.zetetic:android-database-sqlcipher:4.5.0@aar'
+    implementation "androidx.sqlite:sqlite:2.2.0"
 }

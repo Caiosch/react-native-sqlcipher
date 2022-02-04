@@ -8,10 +8,6 @@
 package com.reactlibrary.sqlcipher;
 
 import android.annotation.SuppressLint;
-//import android.database.Cursor;
-//import android.database.sqlite.SQLiteDatabase;
-//import android.database.sqlite.SQLiteException;
-//import android.database.sqlite.SQLiteStatement;
 import android.database.Cursor;
 import net.sqlcipher.database.SQLiteCursor;
 import net.sqlcipher.database.SQLiteDatabase;
@@ -161,7 +157,6 @@ public class SqlcipherPlugin extends ReactContextBaseJavaModule {
         }
     }
 
-
     @ReactMethod
     public void copyDBFile(ReadableMap args, Callback success, Callback error) {
         String actionAsString = "copyDBFile";
@@ -171,7 +166,6 @@ public class SqlcipherPlugin extends ReactContextBaseJavaModule {
             error.invoke("Unexpected error");
         }
     }
-
 
     /**
      *
@@ -396,8 +390,6 @@ public class SqlcipherPlugin extends ReactContextBaseJavaModule {
         InputStream in = null;
         File dbfile = null;
         try {
-
-
             boolean assetImportError = false;
             boolean assetImportRequested = assetFilePath != null && assetFilePath.length() > 0;
             if (assetImportRequested) {
@@ -463,13 +455,11 @@ public class SqlcipherPlugin extends ReactContextBaseJavaModule {
             }
 
             FLog.v(TAG, "DB file is ready, proceeding to OPEN SQLite DB: " + dbfile.getAbsolutePath());
-
         } finally {
             closeQuietly(in);
         }
 
         return dbfile;
-
     }
 
     /**
