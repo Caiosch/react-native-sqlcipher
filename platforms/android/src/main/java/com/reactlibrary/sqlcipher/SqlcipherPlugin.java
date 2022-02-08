@@ -243,6 +243,7 @@ public class SqlcipherPlugin extends ReactContextBaseJavaModule {
                 dbname = SqlcipherPluginConverter.getString(args,"path","");
                 deleteDatabase(dbname, cbc);
                 break;
+
             case copyDBFile :
                 dbname = SqlcipherPluginConverter.getString(args,"name","");
                 String assetFilename = SqlcipherPluginConverter.getString(args,"assetFilename",null);
